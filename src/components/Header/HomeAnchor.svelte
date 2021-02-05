@@ -1,0 +1,35 @@
+<script lang="ts">
+</script>
+
+<li class="nav-list-item">
+  <a href={window.location.href}>
+    <svg
+      width="70"
+      height="70"
+      viewBox="0 0 70 70"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        id="mask0"
+        mask-type="alpha"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="70"
+        height="70"
+      >
+        <path d="M69.5 0.5H0.5V69.5H69.5V0.5Z" fill="white" stroke="#786CFF" />
+      </mask>
+      <g mask="url(#mask0)">
+        <path d="M69.5 0.5H0.5V69.5H69.5V0.5Z" stroke="#786CFF" />
+        <path
+          d="M11 35.5H54M11 13V35.5V13ZM11 58V35.5V58ZM11 35.5L31 13L11 35.5Z"
+          stroke="#87DF7D"
+          stroke-width="2"
+        />
+        <path d="M28 58L40 14L62.5 50" stroke="#87DF7D" stroke-width="2" />
+      </g>
+    </svg>
+  </a>
+</li>
