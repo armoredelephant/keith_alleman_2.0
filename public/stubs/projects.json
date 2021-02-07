@@ -1,6 +1,33 @@
 {
-    "title": "digital darkage studios",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae architecto nulla dolore optio asperiores fugiat ut facilis nihil, voluptatem nobis officia in. Rem asperiores, velit quis officia debitis similique nihil.",
-    "git": null,
-    "url": "https://www.digitaldarkagestudios.com/"
+    "xxx": {
+        "title": "digital darkage studios",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae architecto nulla dolore optio asperiores fugiat ut facilis nihil, voluptatem nobis officia in. Rem asperiores, velit quis officia debitis similique nihil.",
+        "git": null,
+        "url": "https://www.digitaldarkagestudios.com/",
+        "skills": [
+            "React",
+            "Svelte",
+            "GraphQL",
+            "Zenit",
+            "CSS",
+            "Typescript"
+        ],
+        "id": "ZSSDADSAW!@#!#!#@"
+        
+    },
+    "yyy": {
+        "title": "digital darkage studios",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae architecto nulla dolore optio asperiores fugiat ut facilis nihil, voluptatem nobis officia in. Rem asperiores, velit quis officia debitis similique nihil.",
+        "git": null,
+        "url": "https://www.digitaldarkagestudios.com/",
+        "skills": [
+            "React",
+            "Svelte",
+            "GraphQL",
+            "Zenit",
+            "CSS",
+            "Typescript"
+        ],
+        "id": "W$#%#ERTTWDFGSDF"
+    }
 }
