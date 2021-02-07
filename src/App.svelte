@@ -11,7 +11,7 @@
 <MainContainer>
   <IntroContainer />
 </MainContainer>
-<MainContainer>
+<MainContainer section="projects">
   <ProjectWrapper>
     <ProjectButtonContainer />
     <ProjectCard />

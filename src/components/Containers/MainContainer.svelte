@@ -1,6 +1,7 @@
 <script lang="ts">
+  export let section: string;
 </script>
 
-<main class="main-container">
-    <slot />
+<main id={section} class="main-container">
+  <slot />
 </main>
