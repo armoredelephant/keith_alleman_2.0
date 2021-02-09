@@ -6,28 +6,36 @@
   import ProjectSlider from "./ProjectSlider.svelte";
   import SlideWrapper from "./SlideWrapper.svelte";
   import Skills from "./card_comps/Skills.svelte";
+  import { projectStore } from "../../store";
+
   const fetchProjects = (async () => {
     const response = await fetch("/stubs/projects.json");
-    return await response.json();
-  })();
+    const data = await response.json();
+    const keys = Object.keys(data);
 
-  function getKeys(data: any) {
-    return Object.keys(data);
-  }
+    let projects = {};
+
+    keys.map((key) => {
+      projects = { ...projects, [key]: { expand: false } };
+    });
+
+    projectStore.set(projects);
+
+    return await data;
+  })();
 </script>
 
 <div class="project-card-wrapper">
   {#await fetchProjects}
     <div class="project-card">
-      <ArrowButton />
       <div>...loading projects</div>
     </div>
   {:then data}
-    {#each getKeys(data) as projectKey}
+    {#each Object.keys(data) as projectKey}
       <div class="project-card">
-        <ArrowButton />
+        <ArrowButton {projectKey} />
         <ProjectSlider>
-          <SlideWrapper main={true}>
+          <SlideWrapper {projectKey} main={true}>
             <ProjectTitle title={data[projectKey].title} />
             <ProjectDescription description={data[projectKey].description} />
             <ProjectLinks
@@ -35,7 +43,7 @@
               url={data[projectKey].url}
             />
           </SlideWrapper>
-          <SlideWrapper>
+          <SlideWrapper {projectKey}>
             <ProjectTitle title="Skills" />
             <Skills skills={data[projectKey].skills} />
           </SlideWrapper>
@@ -44,7 +52,6 @@
     {/each}
   {:catch}
     <div class="project-card">
-      <ArrowButton />
       <p>Unanbe to load projects. Please refresh the page!</p>
     </div>
   {/await}

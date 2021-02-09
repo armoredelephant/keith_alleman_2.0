@@ -1,15 +1,21 @@
 <script lang="ts">
-  import { expandSkills } from "../../../store";
+  import { projectStore } from "../../../store";
+  export let projectKey: string;
 
+  // This needs to be changed to also track the project that was clicked.
   function showSkills() {
-    let { expand } = $expandSkills;
-    expandSkills.set({ expand: !expand });
+    let { expand } = $projectStore[projectKey];
+    let newStore = $projectStore;
+
+    newStore[projectKey].expand = !expand;
+
+    projectStore.set(newStore);
   }
 </script>
 
 <div class="arrow-button-container">
   <button class="arrow-button" on:click={showSkills}>
-    {#if !$expandSkills.expand}
+    {#if !$projectStore[projectKey].expand}
       <svg
         width="44"
         height="35"

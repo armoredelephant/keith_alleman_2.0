@@ -5,6 +5,4 @@ export const workState = writable<WorkState>({
     workType: "project"
 })
 
-export const expandSkills = writable({
-    expand: false,
-})
+export const projectStore = writable(null);
