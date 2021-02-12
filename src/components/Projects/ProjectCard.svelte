@@ -6,20 +6,35 @@
   import ProjectSlider from "./ProjectSlider.svelte";
   import SlideWrapper from "./SlideWrapper.svelte";
   import Skills from "./card_comps/Skills.svelte";
-  import { projectStore } from "../../store";
+  import {
+    projectStore,
+    workState,
+    projectKeys,
+    scriptKeys,
+  } from "../../store";
+  import type { WorkExpand } from "../../types";
 
   const fetchProjects = (async () => {
-    const response = await fetch("/stubs/projects.json");
+    const url = `/stubs/${$workState.workType}s.json`;
+    const response = await fetch(url);
     const data = await response.json();
     const keys = Object.keys(data);
 
-    let projects = {};
+    let sKeys: string[] = [],
+      pKeys: string[] = [],
+      projects: WorkExpand = {};
 
     keys.map((key) => {
+      data[key].type === "script" ? sKeys.push(key) : pKeys.push(key);
       projects = { ...projects, [key]: { expand: false } };
+      console.log(pKeys, sKeys);
     });
 
     projectStore.set(projects);
+    projectKeys.set(pKeys);
+    scriptKeys.set(sKeys);
+
+    console.log($projectStore, $projectKeys, $scriptKeys);
 
     return await data;
   })();
@@ -31,7 +46,7 @@
       <div>...loading projects</div>
     </div>
   {:then data}
-    {#each Object.keys(data) as projectKey}
+    {#each $workState.workType === "script" ? $scriptKeys : $projectKeys as projectKey}
       <div class="project-card">
         <ArrowButton {projectKey} />
         <ProjectSlider>

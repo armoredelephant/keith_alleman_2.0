@@ -6,3 +6,7 @@ export const workState = writable<WorkState>({
 })
 
 export const projectStore = writable(null);
+
+export const projectKeys = writable<Array<string>>([]);
+
+export const scriptKeys = writable<Array<string>>([]);
