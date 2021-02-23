@@ -1,1 +1,1 @@
-## This is an updated personal portfolio
+## This is an updated personal portfolio.
