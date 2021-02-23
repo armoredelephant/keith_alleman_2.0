@@ -25,9 +25,9 @@
     PowerShell scripts. I instantly got hooked on creating scripts, getting them
     to work with our systems, and refactoring them to improve efficiency. I
     realized it was the most fun I'd had at work and it became something I am
-    very passionate about. Now I'm aiming for the cliché of turning what I love
-    into my career, and am hoping to officially transition into a web
-    development position in the near future.
+    very passionate about. Now I'm aiming to turning what I love into my career,
+    and am hoping to officially transition into a web development position in
+    the near future.
   </div>
   <h3 class="about-header">Interests</h3>
   <div class="about-interests">
