@@ -1,0 +1,40 @@
+<script lang="ts">
+  export const interests: string[] = [
+    "coding",
+    "hiking",
+    "longboarding",
+    "walking",
+    "gaming",
+    "anime",
+    "concerts",
+    "gunpla",
+    "personal growth",
+  ];
+</script>
+
+<div class="about-card">
+  <h3 class="about-header">who i am</h3>
+  <div class="about-description">
+    I'm a web developer who's been self-learning to code since Spring of 2018. I
+    was fortunate enough to be raised in a family that was into computers which
+    allowed me access to computers around the age of 7. Fast-forward about 13
+    years and I started looking for technical support jobs with more of a
+    customer service role. Eventually, I ended up in an Associate Desktop
+    Engineer position which I've held for several years. While in this position
+    I wanted to automate portions of my workload which lead me to working with
+    PowerShell scripts. I instantly got hooked on creating scripts, getting them
+    to work with our systems, and refactoring them to improve efficiency. I
+    realized it was the most fun I'd had at work and it became something I am
+    very passionate about. Now I'm aiming for the cliché of turning what I love
+    into my career, and am hoping to officially transition into a web
+    development position in the near future.
+  </div>
+  <h3 class="about-header">Interests</h3>
+  <div class="about-interests">
+    <ul class="interests">
+      {#each interests as interest}
+        <li class="interests-item">{interest}</li>
+      {/each}
+    </ul>
+  </div>
+</div>

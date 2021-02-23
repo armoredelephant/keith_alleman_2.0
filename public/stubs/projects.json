@@ -1,51 +1,107 @@
 {
-    "xxx": {
+    "p_1": {
         "title": "digital darkage studios",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae architecto nulla dolore optio asperiores fugiat ut facilis nihil, voluptatem nobis officia in. Rem asperiores, velit quis officia debitis similique nihil.",
+        "description": "A new website I designed and developed for Digital Dark Age Studios LLC. For this project I aimed to learn and implement Next.js and Video.js.",
         "git": null,
         "url": "https://www.digitaldarkagestudios.com/",
         "skills": [
             "React",
-            "Svelte",
-            "GraphQL",
-            "Zenit",
-            "CSS",
-            "Typescript"
+            "Next.js",
+            "Typescript",
+            "Firebase",
+            "Video.js",
+            "React Hook Form",
+            "Jest",
+            "React Testing Library"
         ],
-        "id": "ZSSDADSAW!@#!#!#@",
+        "id": "p_1",
         "type": "project"
         
     },
-    "yyy": {
-        "title": "digital darkage studios",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae architecto nulla dolore optio asperiores fugiat ut facilis nihil, voluptatem nobis officia in. Rem asperiores, velit quis officia debitis similique nihil.",
-        "git": null,
-        "url": "https://www.digitaldarkagestudios.com/",
+    "p_2": {
+        "title": "deployment app",
+        "description": "This app was created to store my hardware deployments at my current job. I created this to allow my team to easily search for hardware we deployed, while also making it easier to deploy multiple items to multiple users from one page.",
+        "git": "https://github.com/armoredelephant/deployment-fe",
+        "url": null,
         "skills": [
             "React",
-            "Svelte",
-            "GraphQL",
-            "Zenit",
-            "CSS",
-            "Typescript"
-        ],
-        "id": "W$#%#ERTTWDFGSDF",
+            "Typescript",
+            "Apollo GraphQL",
+            "Formik",
+            "TypeORM",
+            "TypeGraphQL",
+            "Yup",
+            "Apollo Server Express"
+          ],
+        "id": "p_2",
         "type": "project"
     },
-    "zzz": {
-        "title": "digital darkage studios",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae architecto nulla dolore optio asperiores fugiat ut facilis nihil, voluptatem nobis officia in. Rem asperiores, velit quis officia debitis similique nihil.",
-        "git": null,
-        "url": "https://www.digitaldarkagestudios.com/",
+    "p_3": {
+        "title": "hunt conductor",
+        "description": "This app was designed to assist with scouting for hunt trains in Final Fantasy XIV. Instead of using a spreadsheet and having to copy over coordinates for marks, I wanted to be able to just open a map and click their coordinates. I also wanted the route to be optimized, so I made sure to calculate the distance of each mark from the closest teleport.",
+        "git": "https://github.com/armoredelephant/hunt_train",
+        "url": "http://www.hunt-conductor.com",
         "skills": [
-            "React",
-            "Svelte",
-            "GraphQL",
-            "Zenit",
-            "CSS",
-            "Typescript"
+            "useContext", "useReducer", "Immer", "React Hooks", "Firebase", "Discord Web Hooks"
         ],
-        "id": "W$#%#ERTTWDFGSDF",
+        "id": "p_3",
+        "type": "project"
+    },
+    "p_4": {
+        "title": "KeithAlleman.com",
+        "description": "This is the website you're currently viewing. I built this project to display my work while also providing some insight into the person behind the work. This is actually the second version of this website and it is now built with Svelte.",
+        "git": "https://github.com/armoredelephant/keith_alleman_2.0",
+        "url": "https://keithalleman.com",
+        "skills": [
+            "Svelte",
+            "Typescript",
+            "CSS"
+        ],
+        "id": "p_4",
+        "type": "project"
+    },
+    "p_5": {
+        "title": "eviCore Signature Creator",
+        "description": "This was the first web app that I developed. I utilized bootstrap & javascript to create a tool that allowed users to build an Outlook signature. I learned quite a bit about bootstrap and refactoring for functionality accross older browsers (we used IE8 & IE10 still). It was a great project to get my feet wet with and was regularly used for new hire classes within the company. This app was hosted on one of our internal servers using WAMP.",
+        "git": "https://github.com/armoredelephant/signature",
+        "url": null,
+        "skills": [
+            "Compatibility", "WAMP", "Bootstrap", "Vanilla JavaScript"
+        ],
+        "id": "p_5",
+        "type": "project"
+    },
+    "p_6": {
+        "title": "Meraki VLAN updater",
+        "description": "After using the bulk import tool within the meraki dashboard, this script can be ran to update the VLAN for each network so there's no need to individually edit each meraki.",
+        "git": "https://github.com/armoredelephant/vlan-updater",
+        "url": null,
+        "skills": [
+            "Node.js", "Vanilla JavaScript", "CSV-Parser"
+        ],
+        "id": "p_6",
+        "type": "script"
+    },
+    "p_7": {
+        "title": "Meraki Last Seen",
+        "description": "A script that process a list of networks and find networks that have not reached out to the meraki dashboard in over 4 months.",
+        "git": "https://github.com/armoredelephant/MerakiLastSeen",
+        "url": null,
+        "skills": [
+            "Node.js", "Vanilla JavaScript", "CSV-Parser"
+        ],
+        "id": "p_7",
+        "type": "script"
+    },
+    "p_8": {
+        "title": "Meraki Network Finder",
+        "description": "A script that will process a list of networks and find networks that are not created in the Meraki dashboard.",
+        "git": "https://github.com/armoredelephant/MerakiNetworkFinder",
+        "url": null,
+        "skills": [
+            "Node.js", "Vanilla JavaScript", "CSV-Parser"
+        ],
+        "id": "p_8",
         "type": "script"
     }
 }

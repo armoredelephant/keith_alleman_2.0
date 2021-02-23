@@ -5,5 +5,5 @@
 
 <!-- this should anchor to an id. so href="/#id" -->
 <li class="nav-list-item">
-  <a class="nav-anchor" href={getRef(name)}>{name}</a>
+  <a id="nav" class="nav-anchor" href={getRef(name)}>{name}</a>
 </li>
