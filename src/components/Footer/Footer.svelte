@@ -15,7 +15,7 @@
         icon="linkedin"
       />
       <FooterLink
-        url="https://drive.google.com/file/d/16o7405VNAzDtykQdPCS9rzWbEKdlrq_4/view?usp=sharing"
+        url="https://docs.google.com/document/d/1jhdbGeye_VTV0LRobU6uF7NWX2xufSF0/edit?usp=share_link&ouid=108939729982659780751&rtpof=true&sd=true"
       />
     </div>
     <p class="copyright">copyright &#169 keith alleman</p>
