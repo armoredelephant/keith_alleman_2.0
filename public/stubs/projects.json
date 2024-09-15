@@ -40,7 +40,7 @@
         "title": "hunt conductor",
         "description": "This app was designed to assist with scouting for hunt trains in Final Fantasy XIV. Instead of using a spreadsheet and having to copy over coordinates for marks, I wanted to be able to just open a map and click their coordinates. I also wanted the route to be optimized, so I made sure to calculate the distance of each mark from the closest teleport.",
         "git": "https://github.com/armoredelephant/hunt_train",
-        "url": "http://www.hunt-conductor.com",
+        "url": null,
         "skills": [
             "useContext", "useReducer", "Immer", "React Hooks", "Firebase", "Discord Web Hooks"
         ],
